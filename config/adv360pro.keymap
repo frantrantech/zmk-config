@@ -47,7 +47,7 @@
         sym {
             bindings = <
                 &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
-                &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &mod 4                                                            &mo 4 &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
+                &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &mo 4                                                            &mo 4 &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
                 &kp ESC   &kp A     &kp S    &kp KP_PLUS    &kp KP_EQUAL      &kp PERCENT  &mo 4           &kp LGUI &kp LALT &kp LGUI  &kp RCTRL           &mo 5 &kp  KP_ASTERISK &kp KP_LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp L    &kp SEMI &kp SQT
                 &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                 &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
