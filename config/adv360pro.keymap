@@ -5,6 +5,18 @@
 #include <dt-bindings/zmk/backlight.h>
 
 / {
+
+    &lt {
+        tapping-term-ms = <200>;
+        #binding-cells = <2>;
+        flavor = "tap-unless-interrupted";
+        tapping-term-ms = <100>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+        quick-tap-ms = <200>;
+        bindings = <&kp>, <&kp>;
+        hold-trigger-key-positions = <5 6 7 8 9 10>;    // <---[[right-hand keys]]
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -12,7 +24,7 @@
             bindings = <
                 &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
                 &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &mo 4                                                            &mo 4 &kp Y  &kp U  &kp I     &kp O    &kp P    &kp BSLH
-                &lt 4 ESC   &kp A     &kp S    &kp D    &kp F      &kp G  &mo 4           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &mo 4 &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp ENTER
+                &lt 4 ESC   &kp A     &lt 4 S    &kp D    &kp F      &kp G  &mo 4           &kp LCTRL &kp LALT &kp LGUI  &kp RCTRL           &mo 4 &kp H  &kp J  &kp K     &kp L    &kp SEMI &kp ENTER
                 &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp M  &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                 &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp LGUI &kp BSPC   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
             >;
@@ -48,7 +60,7 @@
             bindings = <
                 &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
                 &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &mo 4                                                            &mo 4 &kp Y  &kp KP_PLUS  &kp KP_MULTIPLY     &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE    &kp BSLH
-                &lt 4 ESC   &kp A     &kp KP_MINUS    &kp KP_PLUS    &kp KP_EQUAL      &kp PERCENT  &mo 4           &kp LGUI &kp LALT &kp LGUI  &kp RCTRL           &mo 5 &kp ASTERISK &kp EQUAL  &kp PERCENT    &kp LEFT_PARENTHESIS    &kp LEFT_BRACE &kp ENTER
+                &kp ESC   &kp A     &kp S     &kp KP_PLUS    &kp KP_EQUAL      &kp PERCENT  &mo 4           &kp LGUI &kp LALT &kp LGUI  &kp RCTRL           &mo 5 &kp ASTERISK &kp EQUAL  &kp PERCENT    &kp LEFT_PARENTHESIS    &kp LEFT_BRACE &kp ENTER
                 &kp LSHFT &kp Z     &kp X    &kp C    &kp V      &kp B                            &kp HOME &kp PG_UP                           &kp N  &kp DOLLAR  &kp KP_N0 &kp  SINGLE_QUOTE &kp  DOUBLE_QUOTES &kp RSHFT
                 &mo 2     &kp GRAVE &kp CAPS &kp LEFT &kp RIGHT                &kp BSPC &kp LCTRL   &kp END  &kp PG_DN &kp ENTER &kp SPACE              &kp UP &kp DOWN  &kp LBKT &kp RBKT &mo 2
             >;
