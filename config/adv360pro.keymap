@@ -13,12 +13,14 @@
     bindings = <&mo>, <&kp>;
 };
 
+
+
 / {
     macros {
          linkedin_url: linkedin_url {
             label = "LinkedIn URL";
             tap-ms = <20>;
-            bindings = <
+            bindings = <&macro_tap
                 &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
                 &kp L &kp I &kp N &kp K &kp E &kp D &kp I &kp N &kp DOT
                 &kp C &kp O &kp M &kp SLASH &kp I &kp N &kp SLASH
@@ -31,7 +33,7 @@
         francistran_url: francistran_url {
             label = "Francis Tran URL";
             tap-ms = <20>;
-            bindings = <
+            bindings = <&macro_tap
                 &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
                 &kp F &kp R &kp A &kp N &kp C &kp I &kp S &kp T &kp R &kp A &kp N &kp DOT
                 &kp I &kp O &kp SLASH
@@ -41,7 +43,7 @@
         github_url: github_url {
             label = "GitHub URL";
             tap-ms = <20>;
-            bindings = <
+            bindings = <&macro_tap
                 &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
                 &kp G &kp I &kp T &kp H &kp U &kp B &kp DOT &kp C &kp O &kp M &kp SLASH
                 &kp F &kp R &kp A &kp N &kp T &kp R &kp A &kp N &kp T &kp E &kp C &kp H
