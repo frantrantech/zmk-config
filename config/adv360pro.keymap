@@ -14,6 +14,42 @@
 };
 
 / {
+    macros {
+         linkedin_url: macro {
+            label = "LinkedIn URL";
+            tap-ms = <20>;
+            bindings = <
+                &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
+                &kp L &kp I &kp N &kp K &kp E &kp D &kp I &kp N &kp DOT
+                &kp C &kp O &kp M &kp SLASH &kp I &kp N &kp SLASH
+                &kp F &kp R &kp A &kp N &kp C &kp I &kp S &kp MINUS
+                &kp T &kp R &kp A &kp N &kp MINUS
+                &kp 5 &kp 6 &kp 0 &kp B &kp 2 &kp A &kp 1 &kp 7 &kp 0 &kp SLASH
+            >;
+        };
+
+        francistran_url: macro {
+            label = "Francis Tran URL";
+            tap-ms = <20>;
+            bindings = <
+                &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
+                &kp F &kp R &kp A &kp N &kp C &kp I &kp S &kp T &kp R &kp A &kp N &kp DOT
+                &kp I &kp O &kp SLASH
+            >;
+        };
+
+        github_url: macro {
+            label = "GitHub URL";
+            tap-ms = <20>;
+            bindings = <
+                &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
+                &kp G &kp I &kp T &kp H &kp U &kp B &kp DOT &kp C &kp O &kp M &kp SLASH
+                &kp F &kp R &kp A &kp N &kp T &kp R &kp A &kp N &kp T &kp E &kp C &kp H
+            >;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -47,13 +83,13 @@
         mod {
             bindings = <
                 &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                               &trans      &none &none      &none      &none &none &none
-                &none &none        &none        &none        &none        &none        &bootloader                                                         &bootloader &none &none      &none      &none &none &none
+                &none &macro_linkedin_url        &macro_francistran_url        &macro_github_url        &none        &none        &bootloader                                                         &bootloader &none &none      &none      &none &none &none
                 &none &none        &none        &none        &none        &none        &none             &none &none &bt BT_CLR &none                      &none       &none &none      &none      &none &none &none
                 &none &none        &none        &none        &none        &none                                &none &none                                             &none &none      &none      &none &none &none
                 &none &none        &none        &none        &none                                 &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                   &bl BL_INC &bl BL_DEC &none &none &none
             >;
         };
-        sym {
+        SYMBOL_LAYER {
             bindings = <
                 &kp EQUAL &kp N1    &kp N2   &kp N3   &kp N4     &kp N5 &tog 1                                                           &mo 3 &kp N6 &kp N7 &kp N8    &kp N9   &kp N0   &kp MINUS
                 &kp TAB   &kp Q     &kp W    &kp E    &kp R      &kp T  &mo 4                                                            &mo 4 &kp Y  &kp KP_PLUS  &kp KP_MULTIPLY     &kp RIGHT_PARENTHESIS    &kp RIGHT_BRACE    &kp BSLH
