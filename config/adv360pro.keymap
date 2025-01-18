@@ -17,7 +17,7 @@
 
 / {
     macros {
-         linkedin_url: macro {
+         linkedin_url: macro1 {
             label = "LinkedIn URL";
             #binding-cells = <0>;
             bindings = <&macro_tap
@@ -30,7 +30,7 @@
             >;
         };
 
-        francistran_url: macro {
+        francistran_url: macro2 {
             label = "Francis Tran URL";
             #binding-cells = <0>;
             bindings = <&macro_tap
@@ -40,7 +40,7 @@
             >;
         };
 
-        github_url: macro {
+        github_url: macro2 {
             label = "GitHub URL";
             #binding-cells = <0>;
             bindings = <&macro_tap
