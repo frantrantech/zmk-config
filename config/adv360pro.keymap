@@ -17,9 +17,8 @@
 
 / {
     macros {
-         linkedin_url: linkedin_url {
+         linkedin_url: macro {
             label = "LinkedIn URL";
-            tap-ms = <20>;
             #binding-cells = <0>;
             bindings = <&macro_tap
                 &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
@@ -31,9 +30,8 @@
             >;
         };
 
-        francistran_url: francistran_url {
+        francistran_url: macro {
             label = "Francis Tran URL";
-            tap-ms = <20>;
             #binding-cells = <0>;
             bindings = <&macro_tap
                 &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
@@ -42,9 +40,8 @@
             >;
         };
 
-        github_url: github_url {
+        github_url: macro {
             label = "GitHub URL";
-            tap-ms = <20>;
             #binding-cells = <0>;
             bindings = <&macro_tap
                 &kp H &kp T &kp T &kp P &kp S &kp COLON &kp SLASH &kp SLASH
