@@ -40,7 +40,7 @@
             >;
         };
 
-        github_url: macro2 {
+        github_url: macro3 {
             label = "GitHub URL";
             #binding-cells = <0>;
             bindings = <&macro_tap
